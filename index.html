@@ -13,6 +13,7 @@
     --bg:#170048; --bg2:#230566; --card:rgba(241,236,247,0.06); --line:rgba(241,236,247,0.16);
     --text:#F1ECF7; --muted:#c9c0dd; --accent:#CD9B1D; --accent-tint:rgba(205,155,29,0.08);
   }
+  html{scroll-behavior:smooth;scroll-padding-top:80px;}
   *{box-sizing:border-box;}
   body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
   h1,h2,h3{font-family:'Fraunces',serif;font-weight:700;letter-spacing:-0.01em;}
@@ -110,7 +111,7 @@
   @media (max-width:560px){.banner p{font-size:13px;}}
 
   @media (prefers-reduced-motion: reduce){
-    .btn,.card,.bigcard,.featcard{transition:none;}
+    .btn,.card,.bigcard,.featcard{transition:none;} html{scroll-behavior:auto;}
   }
 </style>
 </head>
