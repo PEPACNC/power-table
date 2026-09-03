@@ -21,7 +21,7 @@
   .wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
   header{position:sticky;top:0;background:rgba(23,0,72,0.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:50;}
   nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
-  .brand{font-family:'Fraunces',serif;font-weight:800;letter-spacing:0.04em;font-size:16px;display:flex;align-items:center;gap:8px;}
+  .brand{font-family:'Fraunces',serif;font-weight:800;letter-spacing:0.04em;font-size:16px;display:flex;align-items:center;gap:8px;color:inherit;text-decoration:none;cursor:pointer;}
   .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block;}
   .navlinks{display:flex;gap:18px;font-size:13px;color:var(--muted);flex-wrap:wrap;}
   .cta{display:flex;gap:10px;}
@@ -115,7 +115,7 @@
   }
 </style>
 </head>
-<body>
+<body id="top">
 
 <!--
   BANNER HOOK LINE — 5 options drafted for Ron/Nathan, live default is Option 3.
@@ -130,7 +130,7 @@
 <header>
   <div class="wrap">
     <nav>
-      <div class="brand"><span class="dot"></span>THE POWER TABLE</div>
+      <a href="#top" class="brand"><span class="dot"></span>THE POWER TABLE</a>
       <div class="navlinks">
         <a href="#what">What It Is</a>
         <a href="#intel">Live Intelligence</a>
